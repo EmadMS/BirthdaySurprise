@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Happy Birthday — Surprise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stage" id="appStage">
+      <!-- Splash Screen -->
+      <section id="splash" class="splash screen active">
+        <h1 id="typed"></h1>
+        <p>Tap anywhere or press the button to start your surprise 🎉</p>
+        <button id="tapBtn" class="tap-btn">Tap to continue</button>
+      </section>
+
+      <!-- Browse / Grid -->
+      <section id="browse" class="screen">
+        <h2>Pick something to watch / view</h2>
+        <div id="grid" class="grid"></div>
+      </section>
+
+      <!-- Player -->
+      <section id="playerWrap" class="screen">
+        <div id="player" class="player"></div>
+        <div class="controls">
+          <button id="backBtn" class="small-btn">Back</button>
+          <button id="skipBtn" class="small-btn">Next</button>
+        </div>
+      </section>
+
+      <!-- Final Redirect -->
+      <section id="final" class="screen">
+        <button id="finalBtn" class="cta">
+          Click here for the final surprise 🎂
+        </button>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
