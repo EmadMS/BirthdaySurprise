@@ -1,0 +1,148 @@
+:root {
+  --turquoise: #2dd4bf;
+  --turquoise-2: #0ea5a4;
+  --black: #0b0b0b;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #081018, #031217);
+  overflow: hidden;
+}
+
+.stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.screen {
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.5s ease;
+}
+.screen.active {
+  display: flex;
+}
+
+.splash h1 {
+  font-size: 48px;
+  color: var(--turquoise);
+  text-shadow: 0 0 10px rgba(45, 212, 191, 0.8);
+}
+.splash p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.tap-btn {
+  margin-top: 20px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, var(--turquoise), var(--turquoise-2));
+  color: var(--black);
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.tap-btn:hover {
+  transform: scale(1.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--turquoise);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 10px;
+  font-size: 16px;
+  color: #e6fff8;
+}
+
+.player {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+.player video,
+.player img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+.small-btn {
+  padding: 10px 20px;
+  background: var(--turquoise);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--black);
+  font-weight: 600;
+}
+.small-btn:hover {
+  background: var(--turquoise-2);
+}
+
+.cta {
+  padding: 14px 28px;
+  background: var(--turquoise);
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--black);
+  font-weight: 700;
+  transition: transform 0.3s;
+}
+.cta:hover {
+  transform: scale(1.1);
+}
