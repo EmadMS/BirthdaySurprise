@@ -1,0 +1,51 @@
+:root {
+  --turquoise: #2dd4bf;
+  --black: #0b0b0b;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.final-container {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+}
+
+.final-container h1 {
+  font-size: 48px;
+  color: var(--turquoise);
+  text-shadow: 0 0 10px rgba(45, 212, 191, 0.8);
+  margin-bottom: 20px;
+}
+
+#typedMessage {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
