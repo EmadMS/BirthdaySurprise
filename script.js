@@ -1,15 +1,15 @@
 // 10 media items: 5 videos + 5 images
 const MEDIA = [
-  { type: "video", src: "media/video1.mp4", thumb: "media/thumb1.jpg", title: "Video Memory 1" },
-  { type: "image", src: "media/photo1.jpg", thumb: "media/photo1-thumb.jpg", title: "Photo Memory 1" },
-  { type: "video", src: "media/video2.mp4", thumb: "media/thumb2.jpg", title: "Video Memory 2" },
-  { type: "image", src: "media/photo2.jpg", thumb: "media/photo2-thumb.jpg", title: "Photo Memory 2" },
-  { type: "video", src: "media/video3.mp4", thumb: "media/thumb3.jpg", title: "Video Memory 3" },
-  { type: "image", src: "media/photo3.jpg", thumb: "media/photo3-thumb.jpg", title: "Photo Memory 3" },
-  { type: "video", src: "media/video4.mp4", thumb: "media/thumb4.jpg", title: "Video Memory 4" },
-  { type: "image", src: "media/photo4.jpg", thumb: "media/photo4-thumb.jpg", title: "Photo Memory 4" },
-  { type: "video", src: "media/video5.mp4", thumb: "media/thumb5.jpg", title: "Video Memory 5" },
-  { type: "image", src: "media/photo5.jpg", thumb: "media/photo5-thumb.jpg", title: "Photo Memory 5" },
+  { type: "video", src: "media/movie.mov", thumb: "media/thumb1.jpg", title: "Video Memory 1" },
+  { type: "image", src: "media/bhoot.jpeg", thumb: "media/photo1-thumb.jpg", title: "Photo Memory 1" },
+  { type: "video", src: "media/movie2.mov", thumb: "media/thumb2.jpg", title: "Video Memory 2" },
+  { type: "image", src: "media/dii.jpg", thumb: "media/photo2-thumb.jpg", title: "Photo Memory 2" },
+  { type: "video", src: "media/movie3.mov", thumb: "media/thumb3.jpg", title: "Video Memory 3" },
+  { type: "image", src: "media/dii2.jpg", thumb: "media/photo3-thumb.jpg", title: "Photo Memory 3" },
+  { type: "video", src: "media/movie4.mov", thumb: "media/thumb4.jpg", title: "Video Memory 4" },
+  { type: "image", src: "media/dii3.jpeg", thumb: "media/photo4-thumb.jpg", title: "Photo Memory 4" },
+  { type: "video", src: "media/movie5.mov", thumb: "media/thumb5.jpg", title: "Video Memory 5" },
+  { type: "image", src: "media/dii4.jpeg", thumb: "media/photo5-thumb.jpg", title: "Photo Memory 5" },
 ];
 
 let currentIndex = 0;
