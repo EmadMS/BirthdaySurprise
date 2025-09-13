@@ -40,7 +40,7 @@ const MEDIA = [
 
 let currentIndex = 0;
 
-// DOM Elements
+// DOM
 const splash = document.getElementById('splash');
 const tapBtn = document.getElementById('tapBtn');
 const browse = document.getElementById('browse');
@@ -49,7 +49,6 @@ const playerWrap = document.getElementById('playerWrap');
 const player = document.getElementById('player');
 const backBtn = document.getElementById('backBtn');
 const skipBtn = document.getElementById('skipBtn');
-const final = document.getElementById('final');
 const finalBtn = document.getElementById('finalBtn');
 
 // typing effect
@@ -72,16 +71,11 @@ function show(screen) {
   screen.classList.add('active');
 }
 
-// start experience
-function startExperience() {
+// start
+tapBtn.addEventListener('click', () => {
   show(browse);
   renderGrid();
-}
-
-// attach tap/click anywhere on splash or button
-tapBtn.addEventListener('click', startExperience);
-splash.addEventListener('click', startExperience);
-splash.addEventListener('touchstart', startExperience);
+});
 
 // render grid
 function renderGrid() {
@@ -107,17 +101,9 @@ function loadMedia(m) {
     const vid = document.createElement('video');
     vid.src = m.src;
     vid.autoplay = true;
-    vid.muted = true; // autoplay unlock
-    vid.playsInline = true;
     vid.controls = false;
     vid.onended = () => nextMedia();
     player.appendChild(vid);
-    vid
-      .play()
-      .then(() => {
-        vid.muted = false;
-      })
-      .catch(() => {});
   } else {
     const img = document.createElement('img');
     img.src = m.src;
@@ -125,19 +111,18 @@ function loadMedia(m) {
     setTimeout(() => nextMedia(), 3000);
   }
 }
-
 function nextMedia() {
   currentIndex++;
   if (currentIndex >= MEDIA.length) {
-    show(final);
+    show(browse); // return to grid after finishing
   } else {
     loadMedia(MEDIA[currentIndex]);
   }
 }
-
-// buttons
 backBtn.onclick = () => show(browse);
 skipBtn.onclick = nextMedia;
+
+// final button → redirect
 finalBtn.onclick = () => {
-  window.location.href = 'final.html'; // redirect to your final message page
+  window.location.href = 'final.html';
 };
