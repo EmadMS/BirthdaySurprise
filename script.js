@@ -1,20 +1,20 @@
-// 10 media items: 5 videos + 5 images
+// 10 media items: 5 videos + 5 images, using media itself as grid thumbnail
 const MEDIA = [
-  { type: "video", src: "movie.mov", thumb: "media/thumb1.jpg", title: "Video Memory 1" },
-  { type: "image", src: "bhoot.jpeg", thumb: "media/photo1-thumb.jpg", title: "Photo Memory 1" },
-  { type: "video", src: "movie2.mov", thumb: "media/thumb2.jpg", title: "Video Memory 2" },
-  { type: "image", src: "dii.jpg", thumb: "media/photo2-thumb.jpg", title: "Photo Memory 2" },
-  { type: "video", src: "movie3.mov", thumb: "media/thumb3.jpg", title: "Video Memory 3" },
-  { type: "image", src: "dii2.jpg", thumb: "media/photo3-thumb.jpg", title: "Photo Memory 3" },
-  { type: "video", src: "movie4.mov", thumb: "media/thumb4.jpg", title: "Video Memory 4" },
-  { type: "image", src: "dii3.jpeg", thumb: "media/photo4-thumb.jpg", title: "Photo Memory 4" },
-  { type: "video", src: "movie5.mov", thumb: "media/thumb5.jpg", title: "Video Memory 5" },
-  { type: "image", src: "dii4.jpeg", thumb: "media/photo5-thumb.jpg", title: "Photo Memory 5" },
+  { type: "video", src: "movie.mov", title: "Video Memory 1" },
+  { type: "image", src: "bhoot.jpeg", title: "Photo Memory 1" },
+  { type: "video", src: "movie2.mov", title: "Video Memory 2" },
+  { type: "image", src: "dii.jpg", title: "Photo Memory 2" },
+  { type: "video", src: "movie3.mov", title: "Video Memory 3" },
+  { type: "image", src: "dii2.jpg", title: "Photo Memory 3" },
+  { type: "video", src: "movie4.mov", title: "Video Memory 4" },
+  { type: "image", src: "dii3.jpeg", title: "Photo Memory 4" },
+  { type: "video", src: "movie5.mov", title: "Video Memory 5" },
+  { type: "image", src: "dii4.jpeg", title: "Photo Memory 5" },
 ];
 
 let currentIndex = 0;
 
-// DOM
+// DOM elements
 const splash = document.getElementById("splash");
 const tapBtn = document.getElementById("tapBtn");
 const browse = document.getElementById("browse");
@@ -25,7 +25,7 @@ const backBtn = document.getElementById("backBtn");
 const skipBtn = document.getElementById("skipBtn");
 const finalBtn = document.getElementById("finalBtn");
 
-// typing effect
+// Typing effect for splash screen
 const typedText = "Happy Birthday Sister 💙";
 let i = 0;
 function typeEffect() {
@@ -37,36 +37,44 @@ function typeEffect() {
 }
 typeEffect();
 
-// switch screens
+// Switch screens
 function show(screen) {
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
   screen.classList.add("active");
 }
 
-// start
+// Start button
 tapBtn.addEventListener("click", () => {
   show(browse);
   renderGrid();
 });
 
-// render grid
+// Render grid using actual media as thumbnails
 function renderGrid() {
   grid.innerHTML = "";
   MEDIA.forEach((m, idx) => {
     const card = document.createElement("div");
     card.className = "card";
-    card.innerHTML = `<img src="${m.thumb}" alt="${m.title}"><h3>${m.title}</h3>`;
+
+    if (m.type === "video") {
+      // Video thumbnail plays muted in a loop
+      card.innerHTML = `<video src="${m.src}" muted autoplay loop></video><h3>${m.title}</h3>`;
+    } else {
+      card.innerHTML = `<img src="${m.src}" alt="${m.title}"><h3>${m.title}</h3>`;
+    }
+
     card.onclick = () => startPlayer(idx);
     grid.appendChild(card);
   });
 }
 
-// player
+// Player
 function startPlayer(index) {
   currentIndex = index;
   show(playerWrap);
   loadMedia(MEDIA[currentIndex]);
 }
+
 function loadMedia(m) {
   player.innerHTML = "";
   if (m.type === "video") {
@@ -83,6 +91,7 @@ function loadMedia(m) {
     setTimeout(() => nextMedia(), 3000);
   }
 }
+
 function nextMedia() {
   currentIndex++;
   if (currentIndex >= MEDIA.length) {
@@ -91,10 +100,12 @@ function nextMedia() {
     loadMedia(MEDIA[currentIndex]);
   }
 }
+
+// Controls
 backBtn.onclick = () => show(browse);
 skipBtn.onclick = nextMedia;
 
-// final button → redirect
+// Final surprise button → redirect to final.html
 finalBtn.onclick = () => {
   window.location.href = "final.html";
 };
