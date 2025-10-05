@@ -26,7 +26,7 @@ const skipBtn = document.getElementById('skipBtn');
 const finalBtn = document.getElementById('finalBtn');
 
 // Typing effect for splash screen
-const typedText = 'Happy Birthday Sister 💙';
+const typedText = 'Happy Birthday Meri Pyari Behn ❤️�';
 let i = 0;
 function typeEffect() {
   if (i < typedText.length) {
