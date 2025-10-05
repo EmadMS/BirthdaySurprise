@@ -1,12 +1,18 @@
-const message = `Dear Sister 💙,
+const message = `My Dear Sister 💙,
 
-Wishing you the happiest of birthdays!
-You are not only my sister but also my best friend.
-I’m so grateful for all the memories we’ve created,
-and I can’t wait for the adventures still to come.
-May this year bring you endless joy, love, and success.
-
-With love always ❤️`;
+Happy Birthday meri pyari dii 🥰❤️
+Aap meri life ki sabse badi blessing ho, ek gift by God jo meri zindagi mein sabse precious hai 🥺❤️.
+As much as I can say, still words will never be enough for what you mean to me ❤️.
+Aap meri champion behn ho, mera jigra ho aap 🥰🥺❤️.
+Time aane pe choti don bhi jab aap mujhe danti ho 🙄🥰 aur aap mera support aur motivation system ho 🥺❤️.
+Aap hamesha khush raho, best health mein raho aur Allah aapko sirf khushiyan de 🥰❤️.
+I pray ke aap apne saare sapne pure karo aur har step pe success pao 🥺❤️.
+Hum dono bhai behn hamesha ek dusre ko pareshan karte rehte hain aur yeh aisi hi hamesha chalta rahega 😅🥰❤️.
+Beshak hum Tom & Jerry ki tarah ek dusre ko pareshan karte hain, aur honestly aapko pareshan karna is the best feeling in the world 😆🥺❤️.
+Dukh, dard ya khushi, har haal mein hum dono ek dusre ke saath rahenge 🥰❤️.
+Honestly, you mean the world to me 🌍❤️.As your bhaiya, I’m so proud that aap meri behn ho 🥺❤️.
+Jo bhi ho jaaye, main hamesha aapke saath rahunga 🥰❤️.
+Aur haan dii… aaj ka din toh special hai, lekin asli gift toh yeh hai ke aapko aaj double pareshan karunga 🤣🤣🥰❤️.`;
 
 const typedMessageEl = document.getElementById('typedMessage');
 
