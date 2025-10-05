@@ -8,7 +8,7 @@ Time aane pe choti don bhi jab aap mujhe danti ho 🙄🥰 aur aap mera support 
 Aap hamesha khush raho, best health mein raho aur Allah aapko sirf khushiyan de 🥰❤️.
 I pray ke aap apne saare sapne pure karo aur har step pe success pao 🥺❤️.
 Hum dono bhai behn hamesha ek dusre ko pareshan karte rehte hain aur yeh aisi hi hamesha chalta rahega 😅🥰❤️.
-Beshak hum Tom & Jerry ki tarah ek dusre ko pareshan karte hain, aur honestly aapko pareshan karna is the best feeling in the world 😆🥺❤️.
+Beshak hum Tom & Jerry ki tarah ek dusre ko pareshan karte hain, aur honestly aapko pareshan karna is the best feeling in the world 🥰🤣😝.
 Dukh, dard ya khushi, har haal mein hum dono ek dusre ke saath rahenge 🥰❤️.
 Honestly, you mean the world to me 🌍❤️.As your bhaiya, I’m so proud that aap meri behn ho 🥺❤️.
 Jo bhi ho jaaye, main hamesha aapke saath rahunga 🥰❤️.
