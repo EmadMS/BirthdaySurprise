@@ -5,11 +5,11 @@ const MEDIA = [
   { type: 'video', src: 'movie2.mp4', title: 'Birthday Memories for Aap 💖' },
   { type: 'image', src: 'dii.jpg', title: 'Aap + Bhaiya = Perfect Duo 🫶' },
   { type: 'video', src: 'movie3.mp4', title: 'Midnight Mood Check 😝' },
-  { type: 'image', src: 'dii2.jpg', title: 'The Iconic Leavers Day' },
+  { type: 'image', src: 'dii2.jpg', title: 'The Iconic Leavers Day 🥺' },
   { type: 'video', src: 'movie4.mp4', title: 'When ChatGPT Chose My Team 😉' },
   { type: 'image', src: 'dii3.jpeg', title: 'Aap Wearing My Gift 😎' },
-  { type: 'video', src: 'movie5.mp4', title: 'World’s Best Sister,No Debate' },
-  { type: 'image', src: 'dii4.jpeg', title: 'Ghibli Sweet Moment' },
+  { type: 'video', src: 'movie5.mp4', title: 'World’s Best Sister,No Debate 🥰' },
+  { type: 'image', src: 'dii4.jpeg', title: 'Ghibli Sweet Moment 🍩' },
 ];
 
 let currentIndex = 0;
